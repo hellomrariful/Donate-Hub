@@ -1,0 +1,5 @@
+nav a.active{
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    color: #FF444A;
+}
