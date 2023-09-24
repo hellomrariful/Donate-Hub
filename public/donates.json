@@ -1,0 +1,135 @@
+[
+      {
+        "ID": "1",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Health",
+        "Title": "Clean Water for Children",
+        "Category": "Health",
+        "Category_bg": "#00A896",
+        "Card_bg": "#E63946",
+        "Text_bg": "#F1FAEE",
+        "Description": "Help provide clean water to children in need.",
+        "Price": "$19.99"
+      },
+      {
+        "ID": "2",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Education",
+        "Title": "Education for Everyone",
+        "Category": "Education",
+        "Category_bg": "#FFD700",
+        "Card_bg": "#1D3557",
+        "Text_bg": "#A8DADC",
+        "Description": "Support accessible education for everyone.",
+        "Price": "$14.99"
+      },
+      {
+        "ID": "3",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Clothing",
+        "Title": "Cloth for Everyone",
+        "Category": "Clothing",
+        "Category_bg": "#FF6B6B",
+        "Card_bg": "#8338EC",
+        "Text_bg": "#FFDD00",
+        "Description": "Provide clothing to those in need around the world.",
+        "Price": "$24.99"
+      },
+      {
+        "ID": "4",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Food",
+        "Title": "Better Food for Everyone",
+        "Category": "Food",
+        "Category_bg": "#EF476F",
+        "Card_bg": "#06D6A0",
+        "Text_bg": "#073B4C",
+        "Description": "Support initiatives for better food access globally.",
+        "Price": "$9.99"
+      },
+      {
+        "ID": "5",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Health",
+        "Title": "Healthy Lifestyle",
+        "Category": "Health",
+        "Category_bg": "#00A896",
+        "Card_bg": "#E63946",
+        "Text_bg": "#F1FAEE",
+        "Description": "Discover the secrets to maintaining a healthy lifestyle.",
+        "Price": "$19.99"
+      },
+      {
+        "ID": "6",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Education",
+        "Title": "Yoga for Beginners",
+        "Category": "Education",
+        "Category_bg": "#FFD700",
+        "Card_bg": "#1D3557",
+        "Text_bg": "#A8DADC",
+        "Description": "Start your yoga journey with this beginner's guide.",
+        "Price": "$14.99"
+      },
+      {
+        "ID": "7",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Clothing",
+        "Title": "Fashion for All",
+        "Category": "Clothing",
+        "Category_bg": "#FF6B6B",
+        "Card_bg": "#8338EC",
+        "Text_bg": "#FFDD00",
+        "Description": "Promote inclusive fashion choices for everyone.",
+        "Price": "$34.99"
+      },
+      {
+        "ID": "8",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Food",
+        "Title": "Delicious Pasta Recipes",
+        "Category": "Food",
+        "Category_bg": "#EF476F",
+        "Card_bg": "#06D6A0",
+        "Text_bg": "#073B4C",
+        "Description": "Explore a variety of mouthwatering pasta recipes.",
+        "Price": "$9.99"
+      },
+      {
+        "ID": "9",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Health",
+        "Title": "Meditation for Stress Relief",
+        "Category": "Health",
+        "Category_bg": "#00A896",
+        "Card_bg": "#E63946",
+        "Text_bg": "#F1FAEE",
+        "Description": "Find inner peace and reduce stress through meditation.",
+        "Price": "$17.99"
+      },
+      {
+        "ID": "10",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Education",
+        "Title": "History of World Civilizations",
+        "Category": "Education",
+        "Category_bg": "#FFD700",
+        "Card_bg": "#1D3557",
+        "Text_bg": "#A8DADC",
+        "Description": "Explore the fascinating history of world civilizations.",
+        "Price": "$34.99"
+      },
+      {
+        "ID": "11",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Clothing",
+        "Title": "Sustainable Clothing Choices",
+        "Category": "Clothing",
+        "Category_bg": "#FF6B6B",
+        "Card_bg": "#8338EC",
+        "Text_bg": "#FFDD00",
+        "Description": "Make sustainable clothing choices for a greener future.",
+        "Price": "$22.99"
+      },
+      {
+        "ID": "12",
+        "Picture": "https://via.placeholder.com/300x200.png?text=Food",
+        "Title": "Vegan Cooking Essentials",
+        "Category": "Food",
+        "Category_bg": "#EF476F",
+        "Card_bg": "#06D6A0",
+        "Text_bg": "#073B4C",
+        "Description": "Learn the essentials of vegan cooking with expert tips.",
+        "Price": "$12.99"
+      }
+    ]
+  
