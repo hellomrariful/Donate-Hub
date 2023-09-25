@@ -1,10 +1,40 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Oval } from "react-loader-spinner";
+import toast, { Toaster } from "react-hot-toast";
+import swal from "sweetalert";
 
 const DonationDetails = () => {
   const { ID } = useParams();
   const [singleCard, setSingleCard] = useState(null);
+
+  const handelAddToDonation = () => {
+    const addedDonationArray = [];
+
+    const donationItem = JSON.parse(localStorage.getItem("donation"));
+
+    if (!donationItem) {
+      addedDonationArray.push(singleCard);
+      localStorage.setItem("donation", JSON.stringify(addedDonationArray));
+      toast.success('Successfully toasted!')
+    } else {
+      const isExist = donationItem.find((singleCard) => singleCard.ID === ID);
+      if (!isExist) {
+        addedDonationArray.push(...donationItem, singleCard);
+        localStorage.setItem("donation", JSON.stringify(addedDonationArray));
+        toast.success('Successfully toasted!')
+
+      } 
+      else {
+       swal({
+            title: "Error!",
+            text: "Already Donate!",
+            icon: "error",
+            button: "Ok",
+          });
+      }
+    }
+  };
 
   useEffect(() => {
     fetch("/public/donates.json")
@@ -48,7 +78,10 @@ const DonationDetails = () => {
 
       <div className="relative -mt-16 ml-6">
         <Link style={btnColor} className=" text-white py-4 px-6 rounded ">
-          <button>Donate {singleCard.Price}</button>
+          <button onClick={handelAddToDonation}>
+            Donate {singleCard.Price}
+          </button>
+          <Toaster position="top-center" reverseOrder={true}></Toaster>
         </Link>
       </div>
       <h1 className="text-black text-4xl font-bold mt-20 mb-6">
