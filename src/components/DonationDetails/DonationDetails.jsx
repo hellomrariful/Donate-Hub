@@ -35,7 +35,7 @@ const DonationDetails = () => {
   };
 
   useEffect(() => {
-    fetch("/public/donates.json")
+    fetch("../donates.json")
       .then((res) => res.json())
       .then((data) => {
         const card = data.find((card) => card.ID === ID);
@@ -71,11 +71,14 @@ const DonationDetails = () => {
       <div className=" relative">
         <img className="w-full" src={singleCard.Picture_Details} alt="" />
 
-        <div className="absolute bottom-0  w-full h-28 bg-[#0B0B0B80]"></div>
+        <div className="absolute bottom-0 w-full md:h-24 h-16 bg-[#0B0B0B80]"></div>
       </div>
 
-      <div className="relative -mt-16 ml-6">
-        <Link style={btnColor} className=" text-white py-4 px-6 rounded ">
+      <div className="relative md:-mt-[60px] -mt-11 ml-6">
+        <Link
+          style={btnColor}
+          className=" text-white md:py-3 md:px-3 px-2 py-3 rounded"
+        >
           <button onClick={handelAddToDonation}>
             Donate {singleCard.Price}
           </button>

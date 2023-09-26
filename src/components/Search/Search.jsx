@@ -9,7 +9,7 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="absolute md:top-96 top-2/4	 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex rounded-lg border border-[#df0404] mx-auto lg:mt-4">
+    <div className="absolute top-96 md:mt-2 mt-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex rounded-lg border border-[#df0404] mx-auto lg:mt-4">
       <input
         type="text"
         className="p-4 rounded-lg md:mr-60 md:focus:w-64 outline-none"
