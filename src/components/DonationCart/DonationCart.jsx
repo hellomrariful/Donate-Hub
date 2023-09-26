@@ -1,38 +1,52 @@
 import { Link } from "react-router-dom";
 
-const DonationCart = ({card}) => {
-    const { ID, Picture, Category, Title, Category_bg, Card_bg, Text_bg } = card || {}
-  
-    const CardStyle = {
-      backgroundColor: Card_bg,
-      borderRadius: "8px",
-      paddingBottom: "16px",
-    };
-    const categoryStyle = {
-      backgroundColor: Category_bg,
-      color: Text_bg,
-    };
-  
-    const titleStyle = {
-      color: Text_bg,
-    };
-  
-    return (
-      <Link to={`/donation/${ID}`}>
-        <div className=" md:my-0 my-10 h-full" style={CardStyle}>
-          <img className="w-full" src={Picture} alt="" />
-          <p
-            style={categoryStyle}
-            className="ml-4 mt-4 px-[10px] py-1 w-fit rounded "
-          >
+const DonationCart = ({ card }) => {
+  const { ID, Cart_Picture, Category, Title, Card_bg, Text_bg, Price } =
+    card || {};
+
+  const CardStyle = {
+    backgroundColor: Card_bg,
+    borderRadius: "8px",
+  };
+  const categoryStyle = {
+    backgroundColor: Text_bg,
+  };
+
+  const titleStyle = {
+    color: Text_bg,
+    backgroundColor: Card_bg,
+  };
+  const PriceStyle = {
+    color: Text_bg,
+  };
+
+  return (
+    <div>
+      <div style={CardStyle} className="grid grid-cols-2 items-center gap-6">
+        <div className=" w-full h-full object-cover">
+          <img src={Cart_Picture} alt="" />
+        </div>
+
+        <div>
+          <p style={titleStyle} className="px-[10px] py-1 w-fit rounded">
             {Category}
           </p>
-          <h2 style={titleStyle} className="ml-4 mt-1">
+          <h1 className="md:text-xl font-semibold md:mt-1 md:mb-1 mt-[2px] mb-[2px]">
             {Title}
-          </h2>
+          </h1>
+          <p style={PriceStyle}>{Price}</p>
+          <Link to={`/donation/${ID}`}>
+            <button
+              style={categoryStyle}
+              className="text-white md:mt-3 px-2 md:py-2 py-[2px] rounded"
+            >
+              View Details
+            </button>
+          </Link>
         </div>
-      </Link>
-    );
-  };
+      </div>
+    </div>
+  );
+};
 
 export default DonationCart;

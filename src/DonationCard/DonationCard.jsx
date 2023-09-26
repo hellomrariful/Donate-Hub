@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 const DonationCard = ({ card }) => {
-  const { ID, Picture, Category, Title, Category_bg, Card_bg, Text_bg } = card || {}
-
+  const { ID, Picture, Category, Title, Category_bg, Card_bg, Text_bg } =
+    card || {};
   const CardStyle = {
     backgroundColor: Card_bg,
     borderRadius: "8px",

@@ -16,22 +16,20 @@ const DonationDetails = () => {
     if (!donationItem) {
       addedDonationArray.push(singleCard);
       localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-      toast.success('Successfully toasted!')
+      toast.success("Thanks for your contribution. Donation added!");
     } else {
       const isExist = donationItem.find((singleCard) => singleCard.ID === ID);
       if (!isExist) {
         addedDonationArray.push(...donationItem, singleCard);
         localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-        toast.success('Successfully toasted!')
-
-      } 
-      else {
-       swal({
-            title: "Error!",
-            text: "Already Donate!",
-            icon: "error",
-            button: "Ok",
-          });
+        toast.success("Thanks for your contribution. Donation added!");
+      } else {
+        swal({
+          title: "Error!",
+          text: "Already Donate! Now you can donate to other category.",
+          icon: "error",
+          button: "Ok",
+        });
       }
     }
   };

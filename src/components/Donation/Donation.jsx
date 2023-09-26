@@ -18,20 +18,24 @@ const Donation = () => {
   return (
     <div>
       {noFound ? (
-        <p className="h-[80vh] flex justify-center items-center">No Data Found!!!</p>
+        <p className="h-[80vh] flex justify-center items-center text-3xl font-semibold text-[#FF444A]">
+          No Data Found!!!
+        </p>
       ) : (
-        <div className="grid grid-cols-2 px-24 mt-20 gap-6">
-          {donation.slice(0, dataLength).map((card) => (
-            <DonationCart key={card.id} card={card}></DonationCart>
-          ))}
+        <div>
+          <div className="grid lg:grid-cols-2 md:px-24 px-4 mt-20 gap-6 md:grid-cols-1">
+            {donation.slice(0, dataLength).map((card) => (
+              <DonationCart key={card.id} card={card}></DonationCart>
+            ))}
+          </div>
           <div
             className={`${
               dataLength >= donation.length ? "hidden" : ""
-            }`}
+            } flex justify-center items-center mt-4`}
           >
             <button
               onClick={() => setDataLength(donation.length)}
-              className="bg-[#009444] text-white px-7 py-4 rounded-lg text-xl flex mt-10 mx-auto mb-24"
+              className="bg-[#009444] text-white px-7 py-3 rounded text-xl mt-10"
             >
               See All
             </button>
@@ -43,5 +47,3 @@ const Donation = () => {
 };
 
 export default Donation;
-
-// className={dataLength === donation.length && "hidden"
