@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DonationCart from "../DonationCart/DonationCart";
+import { Link } from "react-router-dom";
 
 const Donation = () => {
   const [donation, setDonation] = useState([]);
@@ -18,9 +19,13 @@ const Donation = () => {
   return (
     <div>
       {noFound ? (
-        <p className="h-[80vh] flex justify-center items-center text-3xl font-semibold text-[#FF444A]">
-          No Data Found!!!
+        <div className="">
+          <p className=" mt-80 flex justify-center items-center md:text-3xl text-2xl font-semibold text-[#FF444A]">
+          You've not donated yet!!!
+         
         </p>
+        <Link  to={'/'} ><button className="flex mx-auto bg-[#009444] text-white px-7 py-3 rounded text-xl mt-5">Donate Now</button></Link>
+        </div>
       ) : (
         <div>
           <div className="grid lg:grid-cols-2 md:px-24 px-4 mt-20 gap-6 md:grid-cols-1">

@@ -50,7 +50,8 @@ const Statistics = () => {
   };
 
   return (
-    <div>
+   <div className="mx-auto grid">
+     <div>
       <style>
         {`
           .custom-pie-chart path:focus {
@@ -58,7 +59,7 @@ const Statistics = () => {
           }
         `}
       </style>
-      <div className="flex justify-center mt-52">
+      <div className="flex justify-center md:mt-44 mt-20">
         <PieChart width={400} height={400} className="custom-pie-chart">
           <Pie
             data={data}
@@ -79,7 +80,7 @@ const Statistics = () => {
           </Pie>
         </PieChart>
       </div>
-      <div className="flex justify-center mt-20 gap-10">
+      <div className="md:flex justify-center mt-20 gap-10 px-10">
         <div>
           <div className="grid grid-cols-2 items-center gap-2">
             <div className="text-xl">Your Donation</div>
@@ -94,6 +95,7 @@ const Statistics = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

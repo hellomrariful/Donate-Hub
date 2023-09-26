@@ -26,7 +26,7 @@ const DonationDetails = () => {
       } else {
         swal({
           title: "Error!",
-          text: "Already Donate! Now you can donate to other category.",
+          text: "Already Donate! You can donate to other category.",
           icon: "error",
           button: "Ok",
         });
@@ -67,7 +67,7 @@ const DonationDetails = () => {
   }
 
   return (
-    <div className="mt-20 md:px-24">
+    <div className="md:mt-20 mt-14 md:px-24 px-10">
       <div className=" relative">
         <img className="w-full" src={singleCard.Picture_Details} alt="" />
 
@@ -82,10 +82,10 @@ const DonationDetails = () => {
           <Toaster position="top-center" reverseOrder={true}></Toaster>
         </Link>
       </div>
-      <h1 className="text-black text-4xl font-bold mt-20 mb-6">
+      <h1 className="text-black md:text-4xl text-3xl font-bold mt-20 mb-6">
         {singleCard.Title}
       </h1>
-      <p className=" text-[#0B0B0BB2] font-normal mb-12">
+      <p className="text-[#0B0B0BB2] font-normal mb-12">
         {singleCard.Description}
       </p>
     </div>
